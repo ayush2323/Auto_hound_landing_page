@@ -1,0 +1,47 @@
+#carousel1 {
+  width: 100%;
+}
+.testimonial-style .testimonial-caption-style {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  color: #354052;
+  line-height: 30px;
+  bottom: 40%;
+  text-shadow: none;
+  top: 10%;
+}
+.testimonial-style .testimonial-authors {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  color: #354052;
+  line-height: 30px;
+  margin-top: 40px;
+}
+/* carousel-height-control */
+.testimonial-style .carousel-inner > .item {
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 250px;
+  overflow: auto;
+}
+/* carousel-left-right-control */
+.testimonial-style .carousel-control.left {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control.right {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control {
+  color: #354052;
+}
+.testimonial-style .carousel-control:hover {
+  color: #354052;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}

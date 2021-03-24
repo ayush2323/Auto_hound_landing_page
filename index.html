@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width height=device-height initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./cdnjs/mustache.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/testimonies.css">
+        <title>MyAutoHound</title>
+        <link rel="icon" href="./assets/images/logo_fav_icon.png">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <ul class="header">
+                <div id="header-left">
+                    <div class="logo_img_container">
+                        <img class="img" src="./assets/vector_images/logo.svg">
+                    </div>
+                </div>
+                <div id="header-middle">
+                    <a onclick='scrollToId("auction_dealer_name")'>About</a>
+                    <a onclick="scrollToId('howitworks')">How it Works</a>
+                    <a onclick="scrollToId('testimonials')">Testimonials</a>
+                    <a onclick="scrollToId('pricing')">Pricing</a>
+
+                </div>
+                <div id="header-right">
+                        <a href="#">Sign in</a>
+                        <button class="tryfreebtn">TRY FOR FREE</button>
+                </div>
+            </ul>
+            <ul class="mobile_header">
+                <div class="mobile_header_left">
+                    <img src="./assets/images/logo_fav_icon.png">
+                </div>
+                <div class="mobile_header_right">
+                    <button id="login-btn-mb">LOGIN</button>
+                    <button id="tryfreebtn-mb">TRY FOR FREE</button>
+
+                </div>
+            </ul>
+            <div class="sections-conatiner">
+               
+    
+                <section id="about_section">
+                    <div id="about_section_left_div">
+                        <h1 class="about_section_heading">
+                            A Smarter<br>Way to Buy<br>Inventory
+                        </h1>
+                        <br>
+                        <p style="color:#0E3889;font-size: 16px;font-weight: 600;letter-spacing: -0.1;">Advanced Wholesale  Acquisition Tool</p>
+                        <br>
+                        <p style="color:#4A4A4A;letter-spacing: -0.1px;padding:0 15px 0 0; ">MyAutoHound takes the pain out of watching auto auction listings all day and saves car dealers hours per day. MyAutoHound’s engine runs 24/7 finding your buyers the highest quality inventory opportunities.</p>
+                        <button class="getstartedbtn">
+                            GET STARTED FREE
+                        </button>
+                    </div>
+                    <div id="about_section_right_div">
+                 
+                    </div>
+                </section>
+                <!-- mobile section for about, diff coz layout is diff -->
+                <section id="about_section_mobile">
+                    <h1 class="about_section_heading" style="text-align: center;width: 100%;font-size: 55px;line-height: 55px;">
+                        A Smarter<br>Way to<br>Buy<br>Inventory
+                    </h1>
+                    <p style="color:#0E3889;font-size: 27px;font-weight: 600;letter-spacing: -0.1;text-align: center;margin:10px 0px;">Advanced Wholesale<br>Acquisition Tool
+                    </p>
+                    <div id="about_section_right_div" style="min-height: 400px;width: 95%;margin:25px 0px;">
+                 
+                    </div>
+                    <p style="color:#4A4A4A;letter-spacing: -0.1px;padding:15px 25px;text-align: center;font-size: 20px;">MyAutoHound takes the pain out of watching auto auction listings all day and saves car dealers hours per day. MyAutoHound’s engine runs 24/7 finding your buyers the highest quality inventory opportunities.</p>
+                    <button class="getstartedbtn" style="font-weight: 600;width: 90%;">
+                        GET STARTED FREE
+                    </button>
+                </section>
+                <section id="auction_dealer_name">
+                    <div class="center-holder-with-icons">
+                        <p>Current Auction Integrations</p>
+                        <div class="icon-holder">
+                            <img src="./assets/vector_images/acv.svg">
+                        
+                        </div>
+                    </div>
+                    <div class="center-holder-with-icons">
+                        <p>A Few of Our Dealer Partners</p>
+                        <div class="icon-holder">
+                            <img src="./assets/vector_images/mention.svg">
+                            <img src="./assets/vector_images/segment.svg">
+                            <img src="./assets/vector_images/buzzsumo.svg">
+                            <img src="./assets/vector_images/wheniwork.svg">
+                            <img src="./assets/vector_images/dashlane.svg">
+
+    
+                        
+                        </div>
+                    </div>
+                </section>
+                <div class="divider">
+
+                </div>
+                <section id="tool_classification">
+                    <div id="tool_classification_section_left_div">
+                        <!-- image here -->
+                    </div>
+                    <div id="tool_classification_section_right_div">
+                        <h1 style="color: #0E3889;font-weight: 600;font-size: 40px;">
+                            Actionable Auction Tool that Helps You Buy More in Less Time
+                        </h1>
+                        <br>
+                        <p style="font-size: 15px; color:#4A4A4A;letter-spacing: -0.1px;padding:0 15px 0 0; ">MyAutoHound was created for a local independent dealer to help repurpose 
+                            time for more customer focused tasks. It has evolved into a high performing 
+                            buying tool that allows auto dealers to sit back and wait for buying leads to come to them. Resulting in less overhead and higher buying conversion 
+                            rates.</p>
+                       
+                    </div>
+                </section>
+                <section id="tool_classification_mobile">
+                    <h1 style="color: #0E3889;font-weight: 800;font-size: 40px;text-align: center;margin: 10px 20px;">
+                        Actionable Auction<br>Tool that Helps<br>You Buy More in<br>Less Time
+                    </h1>
+                    <div id="tool_classification_section_left_div" style="width: 90%;height: 250px;margin:25px 0px;">
+                        <!-- image here -->
+                    </div>
+
+                        <p style="font-size: 17px; color:#4A4A4A;padding:40px; text-align: center;">MyAutoHound was created for a local independent dealer to help repurpose 
+                            time for more customer focused tasks. It has evolved into a high performing 
+                            buying tool that allows auto dealers to sit back and wait for buying leads to come to them. Resulting in less overhead and higher buying conversion 
+                            rates.</p>
+                       
+                </section>
+                <div class="divider extra-margin">
+
+                </div>
+                <div class="divider extra-margin">
+
+                </div>
+                <div class="divider extra-margin" style="background-color: white;">
+
+                </div>
+                <section id="howitworks">
+                    <div id="howitworks_header">
+                        <div id="howitworks_header_left">
+                            <h1 style="color: #0E3889;font-weight: 600;font-size: 40px;">
+                                Reliable Buying Solution for High Performing Teams
+                            </h1>
+                        </div>
+                        <div id="howitworks_header_right">
+                            <p style="font-size: 15px; color:#4A4A4A;letter-spacing: -0.1px;padding:0 15px 0 0; ">MyAutoHound sets you up for success with a hyper-productive auction bot that ensures a listing matches your strict buying criteria before passing it along to your buying team.</p>
+                        </div>
+                    </div>
+                    <div id="howitworks_bullets">
+                        <div id="howitworks_bullets_left">
+                            <div class="bullet-container">
+                                <div class="bullet-container_img">
+                                    <img src="./assets/vector_images/bullet_1.svg">
+                                </div>  
+                                <div class="bullet-container_data">
+                                    <h4>Set your buying criteria</h4>
+                                    <p>With over 33 buying criteria options, MyAutoHound will change the way you source online. Once you set up your filters, the tool runs itself. No more reading hundreds of condition reports per day.</p>
+                                </div>
+                            </div>
+                            <div class="bullet-container">
+                                <div class="bullet-container_img">
+                                    <img src="./assets/vector_images/bullet_2.svg">
+                                </div>  
+                                <div class="bullet-container_data">
+                                    <h4>Save time & overhead</h4>
+                                    <p>The MyAutoHound engine runs 24/7 hunting for the listings that fit your buying criteria. From history report to damage disclosures, your team doesn’t have to waste time analyzing listings or condition reports anymore.</p>
+                                </div>
+                            </div>
+                            <div class="bullet-container">
+                                <div class="bullet-container_img">
+                                    <img src="./assets/vector_images/bullet_3.svg">
+                                </div>  
+                                <div class="bullet-container_data">
+                                    <h4>Real-time notifications</h4>
+                                    <p>We will send you SMS messages and/or desktop notifications when a live listing matches your buying criteria. Let our tool do the research and you do the buying.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="howitworks_bullets_right">
+                            <!-- image here -->
+                        </div>
+                    </div>
+                </section>
+                <div class="divider" style="background-color: white;">
+                </div>
+                <section id="testimonials">
+                    <h1 class="testimonials_heading">
+                        From Our Dealers
+                    </h1>
+                    <div id="testimonials-data" style="margin: 0px 60px 10px 60px;min-height: 250px;text-align: center;">
+                        <p style="margin-top: 40px;" id="testimonials_status">Loading Testimonials.....</p>
+                    </div>
+                </section>
+                <section id="pricing">
+                    <div class="pricing_div">
+                        <div class="pricing_div_left">
+                            <p>Buy Smarter,<br>Not Harder!</p>
+                            <button>TRY FOR FREE</button>
+                        </div> 
+                        <div class="pricing_div_right">
+                            <p>The MyAutoHound auction tool is $139.99/mo. per user. Stop missing auctions or wasting time (money) on nightmare listings. This 24/7 tool doesn’t take breaks and won’t quit on you. Set it once and let it work. The perfect employee for any sized dealership.</p>
+                        </div>
+                    </div>
+                    <div class="pricing_div_mobile">
+                        <div style="background: #f5f9fe;width: 100%;align-items: center;border-radius: 20px;" class="pricing_div_left">
+                            <p style="font-size: 35px;">Buy Smarter,<br>Not Harder!</p>
+                            <button>TRY FOR FREE</button>
+                        </div>
+                        <div class="pricing_div_right">
+                            <p>The MyAutoHound auction tool is $139.99/mo. per user. Stop missing auctions or wasting time (money) and start buying efficiently. This 24/7 tool doesn’t take breaks and won’t quit on you. Set it once and let it work. The perfect employee for any sized dealership.</p>
+                        </div>
+                    </div>
+                </section>
+                <div style="background: white;" class="divider"></div>
+            </div>
+            <div class="footer">
+                <div class="footer-data">
+                    <div class="footer-company">
+                        <h3 class="footer-subheading">COMPANY</h3>
+                        <div class="footer-block-holder">
+                            <div class="footer-data-block">
+                                <a onclick='scrollToId("auction_dealer_name")'>About</a>
+                                <a onclick="scrollToId('howitworks')">How it Works</a>
+                            </div>
+                            <div class="footer-data-block">
+                                <a onclick="scrollToId('pricing')">Pricing</a>
+                                <a onclick="scrollToId('testimonials')">Testimonials</a>
+                            </div>
+                            <div class="footer-data-block">
+                                <a>Login</a>
+                                <a>Sign Up</a>
+                            </div>
+                            <div class="footer-data-block">
+                                <a>Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-legal">
+                        <h3 class="footer-subheading">LEGAL</h3>
+                        <div class="footer-block-holder">
+                            <div class="footer-data-block">
+                                <a>Privacy</a>
+                                <a>Legal</a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="footer-icons">
+                        <img src="./assets/vector_images/facebook_icon.svg">
+                        <img src="./assets/vector_images/linkedin_icon.svg">
+                    </div>
+                </div>
+                <div class="footer_cp">
+                    <p style="display: flex;align-items: center;"><span style="font-size: 19px;font-weight: 600;position: relative;top: 2px;margin-right: 4px;">©</span>Copyright 2021, MyAutoHound Co.</p>
+                </div>                
+            </div>  
+        </div>
+
+
+
+
+
+    <script type="text/html" id="testimony-template">
+        <div class="carousel-caption">
+            <p class="p-review">{{{review}}}</p>
+            <p class="p-username">{{{userName}}}</p>
+            <p class="p-dealername">{{{userDealershipName}}}</p>
+        </div>
+    </script>
+
+    <script type="text/html" id="testimonial-container">
+        <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
+            <div class="carousel-inner">
+                {{{carousel_inner}}}
+            </div>
+            <a class="left carousel-control" style="display: flex;justify-content: center;align-items:center;" href="#carousel1" data-slide="prev"> <span><img  style="height:55px;width:25px;" src="./assets/vector_images/l_arr.svg"></span> </a>
+            <a class="right carousel-control"  style="display: flex;justify-content: center;align-items:center;"  href="#carousel1" data-slide="next"> <span><img style="height:55px;width:25px;" src="./assets/vector_images/r_arr.svg"></span></a>
+        </div>
+    </script>
+    <script src="./effects/index.js"></script>
+
+    </body>
+
+</html>
